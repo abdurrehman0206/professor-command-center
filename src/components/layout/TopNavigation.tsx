@@ -21,6 +21,7 @@ import { Badge } from '@/components/ui/badge';
 import { useAuth } from '@/contexts/AuthContext';
 import { useApp } from '@/contexts/AppContext';
 import { NotificationDropdown } from '../features/NotificationDropdown';
+import { ThemeToggle } from '../theme/ThemeToggle';
 
 interface TopNavigationProps {
   onMenuClick: () => void;
@@ -80,7 +81,10 @@ export const TopNavigation: React.FC<TopNavigationProps> = ({
         </div>
 
         {/* Right side */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          {/* Theme Toggle */}
+          <ThemeToggle />
+          
           {/* Notifications */}
           <NotificationDropdown />
 
