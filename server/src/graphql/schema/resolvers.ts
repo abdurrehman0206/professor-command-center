@@ -22,3 +22,5 @@ const resolvers = {
 		...mockSubmissionsResolvers.Mutation,
 	},
 };
+
+export default resolvers;
