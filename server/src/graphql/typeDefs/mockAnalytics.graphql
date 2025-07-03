@@ -1,0 +1,19 @@
+type mockAnalytics {
+	submissionRate: SubmissionRate
+	gradeDistribution: [GradeDistribution]
+	assignmentCompletion: [AssignmentCompletion]
+}
+
+type SubmissionRate {
+	onTime: Int
+	late: Int
+	missing: Int
+}
+type GradeDistribution {
+	grade: String
+	count: Int
+}
+type AssignmentCompletion {
+	assignment: String
+	completion: Int
+}

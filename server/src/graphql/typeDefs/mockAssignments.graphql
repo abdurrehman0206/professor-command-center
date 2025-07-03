@@ -1,0 +1,27 @@
+type MockAssignment {
+	id: Int!
+	title: String!
+	description: String!
+	dueDate: String!
+	courseId: String!
+	status: String!
+	totalSubmissions: Int
+	lateSubmissions: Int
+}
+
+input CreateMockAssignmentInput{
+	title: String!
+	description: String!
+	dueDate: String!
+	courseId: String!
+	status: String!
+}
+
+type Query{
+	getMockAssignments():[MockAssignment]
+	getMockAssignmentById(id:Int!):MockAssignment
+}
+
+type Mutation{
+	createMockAssignment(input : CreateMockAssignmentInput):MockAssignment
+}

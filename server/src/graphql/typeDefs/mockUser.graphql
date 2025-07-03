@@ -1,0 +1,10 @@
+type MockUser {
+	id: Int!
+	name: String!
+	email: String!
+	role: String!
+}
+
+type Query {
+	getMockUser(id: Int): MockUser
+}

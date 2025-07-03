@@ -1,0 +1,16 @@
+type MockNotification {
+	id: Int!
+	message: String!
+	type: String!
+	timestamp: String!
+	read: Boolean!
+}
+
+
+type Query{
+	getMockNotifications():[MockNotification]
+}
+
+type Mutation{
+	markMockNotificationAsRead(id:Int!):MockNotification
+}

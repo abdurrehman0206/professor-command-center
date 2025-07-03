@@ -1,0 +1,25 @@
+type MockSubmission {
+	id: Int!
+	assignmentId: String!
+	studentId: String!
+	submittedAt: String!
+	isLate: Boolean!
+	grade: Int
+	feedback: String
+	fileUrl: String
+	status: String
+}
+
+input UpdateMockSubmissionInput{
+	id:Int!
+	grade:Int
+	feedback:String
+}
+
+type Query{
+	getMockSubmissions():[MockSubmissions]
+}
+
+type Mutations{
+	updateMockSubmission(input:UpdateMockSubmissionInput):MockSubmission
+}

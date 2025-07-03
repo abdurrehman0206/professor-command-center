@@ -1,0 +1,12 @@
+type MockCourse {
+	id: Int!
+	code: String!
+	name: String!
+	semester: String!
+	year: Int!
+}
+
+type Query {
+	getMockCourses():[MockCourse]
+	getMockCourseById(id:Int!):MockCourse
+}
