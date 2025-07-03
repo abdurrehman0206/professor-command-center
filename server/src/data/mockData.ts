@@ -9,14 +9,14 @@ import {
 	AnalyticsData,
 } from "@/types";
 
-export const mockUser: User = {
+export let mockUser: User = {
 	id: "1",
 	name: "Professor John Doe",
 	email: "john.doe@university.edu",
 	role: "professor",
 };
 
-export const mockCourses: Course[] = [
+export let mockCourses: Course[] = [
 	{
 		id: "1",
 		code: "CS101",
@@ -40,7 +40,7 @@ export const mockCourses: Course[] = [
 	},
 ];
 
-export const mockStudents: Student[] = [
+export let mockStudents: Student[] = [
 	{
 		id: "1",
 		name: "Alice Johnson",
@@ -76,7 +76,7 @@ export const mockStudents: Student[] = [
 	},
 ];
 
-export const mockAssignments: Assignment[] = [
+export let mockAssignments: Assignment[] = [
 	{
 		id: "1",
 		title: "Hello World Program",
@@ -119,7 +119,7 @@ export const mockAssignments: Assignment[] = [
 	},
 ];
 
-export const mockSubmissions: Submission[] = [
+export let mockSubmissions: Submission[] = [
 	{
 		id: "1",
 		assignmentId: "1",
@@ -190,7 +190,7 @@ export const mockSubmissions: Submission[] = [
 	},
 ];
 
-export const mockNotifications: Notification[] = [
+export let mockNotifications: Notification[] = [
 	{
 		id: "1",
 		message: 'Assignment "Hello World Program" due tomorrow',
@@ -221,7 +221,7 @@ export const mockNotifications: Notification[] = [
 	},
 ];
 
-export const mockAnalytics: AnalyticsData = {
+export let mockAnalytics: AnalyticsData = {
 	submissionRates: {
 		onTime: 65,
 		late: 20,
