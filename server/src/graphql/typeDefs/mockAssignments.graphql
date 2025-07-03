@@ -4,9 +4,15 @@ type MockAssignment {
 	description: String!
 	dueDate: String!
 	courseId: String!
-	status: String!
+	status: Status!
 	totalSubmissions: Int
 	lateSubmissions: Int
+}
+
+enum Status{
+	draft
+	open
+	closed
 }
 
 input CreateMockAssignmentInput{
@@ -14,7 +20,7 @@ input CreateMockAssignmentInput{
 	description: String!
 	dueDate: String!
 	courseId: String!
-	status: String!
+	status: Status!
 }
 
 type Query{
