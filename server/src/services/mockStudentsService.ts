@@ -1,5 +1,5 @@
-import { mockStudents } from "@/data/mockData";
-import { Student } from "@/types";
+import { mockStudents } from "../data/mockData.js";
+import { Student } from "../types";
 
 export const getMockStudents = (): Student[] => {
 	return mockStudents;

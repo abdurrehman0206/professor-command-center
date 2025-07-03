@@ -1,5 +1,5 @@
-import { mockCourses } from "@/data/mockData";
-import { Course } from "@/types";
+import { mockCourses } from "../data/mockData.js";
+import { Course } from "../types";
 
 export const getMockCourses = (): Course[] => {
 	return mockCourses;

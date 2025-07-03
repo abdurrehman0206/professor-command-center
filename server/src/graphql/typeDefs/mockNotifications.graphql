@@ -8,7 +8,7 @@ type MockNotification {
 
 
 type Query{
-	getMockNotifications():[MockNotification]
+	getMockNotifications:[MockNotification]
 }
 
 type Mutation{

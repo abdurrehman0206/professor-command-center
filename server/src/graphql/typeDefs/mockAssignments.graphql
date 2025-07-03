@@ -24,7 +24,7 @@ input CreateMockAssignmentInput{
 }
 
 type Query{
-	getMockAssignments():[MockAssignment]
+	getMockAssignments:[MockAssignment]
 	getMockAssignmentById(id:Int!):MockAssignment
 }
 

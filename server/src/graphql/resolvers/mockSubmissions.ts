@@ -1,8 +1,8 @@
 import {
 	getMockSubmissions,
 	updateMockSubmission,
-} from "@/services/mockSubmissionsService";
-import { SubmissionInput } from "@/types";
+} from "../../services/mockSubmissionsService.js";
+import { SubmissionInput } from "../../types";
 
 export const mockSubmissionsResolvers = {
 	Query: {

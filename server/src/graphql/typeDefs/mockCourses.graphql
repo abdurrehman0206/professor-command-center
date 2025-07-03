@@ -7,6 +7,6 @@ type MockCourse {
 }
 
 type Query {
-	getMockCourses():[MockCourse]
+	getMockCourses:[MockCourse]
 	getMockCourseById(id:Int!):MockCourse
 }

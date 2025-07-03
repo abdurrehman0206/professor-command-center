@@ -2,8 +2,8 @@ import {
 	getMockAssignments,
 	getMockAssignmentById,
 	createMockAssignment,
-} from "@/services/mockAssignmentsService";
-import { AssignmentInput } from "@/types";
+} from "../../services/mockAssignmentsService.js";
+import { AssignmentInput } from "../../types";
 
 export const mockAssignmentsResolvers = {
 	Query: {

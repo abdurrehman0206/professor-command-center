@@ -1,4 +1,4 @@
-import { getMockAnalytics } from "@/services/mockAnalyticsService";
+import { getMockAnalytics } from "../../services/mockAnalyticsService.js";
 
 export const mockAnalyticsResolvers = {
 	Query: {

@@ -1,5 +1,5 @@
-import { mockAssignments } from "@/data/mockData";
-import { Assignment, AssignmentInput } from "@/types";
+import { mockAssignments } from "../data/mockData.js";
+import { Assignment, AssignmentInput } from "../types";
 
 export const getMockAssignments = (): Assignment[] => {
 	return mockAssignments;

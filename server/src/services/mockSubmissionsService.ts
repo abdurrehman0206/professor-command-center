@@ -1,5 +1,5 @@
-import { mockSubmissions } from "@/data/mockData";
-import { Submission, SubmissionInput } from "@/types";
+import { mockSubmissions } from "../data/mockData.js";
+import { Submission, SubmissionInput } from "../types";
 
 export const getMockSubmissions = (): Submission[] => {
 	return mockSubmissions;

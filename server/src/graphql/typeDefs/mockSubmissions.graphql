@@ -17,9 +17,9 @@ input UpdateMockSubmissionInput{
 }
 
 type Query{
-	getMockSubmissions():[MockSubmissions]
+	getMockSubmissions:[MockSubmission]
 }
 
-type Mutations{
+type Mutation{
 	updateMockSubmission(input:UpdateMockSubmissionInput):MockSubmission
 }

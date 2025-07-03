@@ -1,7 +1,7 @@
 import {
 	getMockNotifications,
-	markNotificationAsRead,
-} from "@/services/mockNotificationsService";
+	markMockNotificationAsRead,
+} from "../../services/mockNotificationsService.js";
 
 export const mockNotificationsResolvers = {
 	Query: {
@@ -10,8 +10,8 @@ export const mockNotificationsResolvers = {
 		},
 	},
 	Mutation: {
-		markNotificationAsRead: (_: unknown, { id }: { id: number }) => {
-			return markNotificationAsRead(id);
+		markMockNotificationAsRead: (_: unknown, { id }: { id: number }) => {
+			return markMockNotificationAsRead(id);
 		},
 	},
 };

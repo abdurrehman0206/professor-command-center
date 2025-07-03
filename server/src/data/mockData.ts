@@ -7,7 +7,7 @@ import {
 	Submission,
 	Notification,
 	AnalyticsData,
-} from "@/types";
+} from "../types";
 
 export let mockUser: User = {
 	id: "1",

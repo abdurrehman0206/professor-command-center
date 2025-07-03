@@ -1,10 +1,10 @@
-import { mockUserResolvers } from "../resolvers/mockUser";
-import { mockSubmissionsResolvers } from "../resolvers/mockSubmissions";
-import { mockStudentsResolvers } from "../resolvers/mockStudents";
-import { mockNotificationsResolvers } from "../resolvers/mockNotifications";
-import { mockCoursesResolvers } from "../resolvers/mockCourses";
-import { mockAssignmentsResolvers } from "../resolvers/mockAssignments";
-import { mockAnalyticsResolvers } from "../resolvers/mockAnalytics";
+import { mockUserResolvers } from "../resolvers/mockUser.js";
+import { mockSubmissionsResolvers } from "../resolvers/mockSubmissions.js";
+import { mockStudentsResolvers } from "../resolvers/mockStudents.js";
+import { mockNotificationsResolvers } from "../resolvers/mockNotifications.js";
+import { mockCoursesResolvers } from "../resolvers/mockCourses.js";
+import { mockAssignmentsResolvers } from "../resolvers/mockAssignments.js";
+import { mockAnalyticsResolvers } from "../resolvers/mockAnalytics.js";
 
 const resolvers = {
 	Query: {

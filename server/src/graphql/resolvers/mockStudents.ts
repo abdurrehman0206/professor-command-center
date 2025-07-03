@@ -1,7 +1,7 @@
 import {
 	getMockStudents,
 	getMockStudentById,
-} from "@/services/mockStudentsService";
+} from "../../services/mockStudentsService.js";
 
 export const mockStudentsResolvers = {
 	Query: {

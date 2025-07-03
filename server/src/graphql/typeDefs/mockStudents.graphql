@@ -6,6 +6,6 @@ type MockStudent {
 }
 
 type Query {
-	getMockStudents():[MockStudent]
+	getMockStudents:[MockStudent]
 	getMockStudentById(id:Int!) : MockStudent
 }

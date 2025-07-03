@@ -1,4 +1,4 @@
-import { getMockUserById } from "@/services/mockUserService";
+import { getMockUserById } from "../../services/mockUserService.js";
 
 export const mockUserResolvers = {
 	Query: {

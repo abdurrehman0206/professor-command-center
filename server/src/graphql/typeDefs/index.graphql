@@ -1,7 +1,0 @@
-#import "./mockUser.graphql"
-#import "./mockSubmissions.graphql"
-#import "./mockStudents.graphql"
-#import "./mockNotifications.graphql"
-#import "./mockCourses.graphql"
-#import "./mockAssignments.graphql"
-#import "./mockAnalytics.graphql"
