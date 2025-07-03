@@ -1,4 +1,4 @@
-type mockAnalytics {
+type MockAnalytics {
 	submissionRate: SubmissionRate
 	gradeDistribution: [GradeDistribution]
 	assignmentCompletion: [AssignmentCompletion]
@@ -16,4 +16,9 @@ type GradeDistribution {
 type AssignmentCompletion {
 	assignment: String
 	completion: Int
+}
+
+type Query {
+	getMockAnalytics():MockAnalytics
+
 }
