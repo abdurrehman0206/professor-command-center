@@ -20,5 +20,4 @@ type AssignmentCompletion {
 
 type Query {
 	getMockAnalytics():MockAnalytics
-
 }
