@@ -6,5 +6,5 @@ type MockUser {
 }
 
 type Query {
-	getMockUser(id: Int): MockUser
+	getMockUserById(id: Int): MockUser
 }
