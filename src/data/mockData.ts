@@ -17,27 +17,27 @@ export const mockUser: User = {
 };
 
 export const mockCourses: Course[] = [
-  {
-    id: '1',
-    code: 'CS101',
-    name: 'Introduction to Computer Science',
-    semester: 'Fall',
-    year: 2024
-  },
-  {
-    id: '2',
-    code: 'ENG205',
-    name: 'Advanced English Composition',
-    semester: 'Fall',
-    year: 2024
-  },
-  {
-    id: '3',
-    code: 'MATH301',
-    name: 'Calculus III',
-    semester: 'Fall',
-    year: 2024
-  }
+	{
+		id: "1",
+		code: "CS101",
+		name: "Introduction to Computer Science",
+		semester: "Fall",
+		year: 2024,
+	},
+	{
+		id: "2",
+		code: "ENG205",
+		name: "Advanced English Composition",
+		semester: "Fall",
+		year: 2024,
+	},
+	{
+		id: "3",
+		code: "MATH301",
+		name: "Calculus III",
+		semester: "Fall",
+		year: 2024,
+	},
 ];
 
 export const mockStudents: Student[] = [
