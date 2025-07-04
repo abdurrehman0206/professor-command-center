@@ -73,6 +73,7 @@ export interface SubmissionInput {
 	id: string;
 	grade: number;
 	feedback: string;
+	status: "submitted" | "graded";
 }
 
 export interface AssignmentInput {

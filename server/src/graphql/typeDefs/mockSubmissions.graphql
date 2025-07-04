@@ -7,13 +7,18 @@ type MockSubmission {
 	grade: Int
 	feedback: String
 	fileUrl: String
-	status: String
+	status: SubmissionStatus
 }
 
+enum SubmissionStatus {
+	graded
+	submitted
+}
 input UpdateMockSubmissionInput {
 	id: String!
 	grade: Int
 	feedback: String
+	status: SubmissionStatus
 }
 
 type Query {
