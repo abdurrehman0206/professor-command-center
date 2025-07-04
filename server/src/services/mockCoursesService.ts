@@ -5,8 +5,8 @@ export const getMockCourses = (): Course[] => {
 	return mockCourses;
 };
 
-export const getMockCourseById = (id: number): Course | null => {
-	const mockCourse = mockCourses.find((course) => course.id === id.toString());
+export const getMockCourseById = (id: string): Course | null => {
+	const mockCourse = mockCourses.find((course) => course.id === id);
 	if (mockCourse) return mockCourse;
 	return null;
 };

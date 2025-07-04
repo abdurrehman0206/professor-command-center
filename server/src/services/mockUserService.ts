@@ -1,7 +1,7 @@
 import { mockUser } from "../data/mockData.js";
 import { User } from "../types";
 
-export const getMockUserById = (id: number): User | null => {
-	if (mockUser.id === id.toString()) return mockUser;
+export const getMockUserById = (id: string): User | null => {
+	if (mockUser.id === id) return mockUser;
 	return null;
 };

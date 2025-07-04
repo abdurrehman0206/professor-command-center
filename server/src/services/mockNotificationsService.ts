@@ -4,9 +4,9 @@ import { Notification } from "../types";
 export const getMockNotifications = (): Notification[] => {
 	return mockNotifications;
 };
-export const markMockNotificationAsRead = (id: number): Notification | null => {
+export const markMockNotificationAsRead = (id: string): Notification | null => {
 	const notificationIndex = mockNotifications.findIndex(
-		(notif) => notif.id === id.toString(),
+		(notif) => notif.id === id,
 	);
 	if (notificationIndex !== -1) {
 		mockNotifications[notificationIndex].read = true;

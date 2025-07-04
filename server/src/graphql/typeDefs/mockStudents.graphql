@@ -1,11 +1,11 @@
 type MockStudent {
-	id: Int!
+	id: String!
 	name: String!
 	email: String!
 	courseId: String!
 }
 
 type Query {
-	getMockStudents:[MockStudent]
-	getMockStudentById(id:Int!) : MockStudent
+	getMockStudents: [MockStudent]
+	getMockStudentById(id: String!): MockStudent
 }

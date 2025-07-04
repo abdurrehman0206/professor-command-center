@@ -1,5 +1,5 @@
 type MockSubmission {
-	id: Int!
+	id: String!
 	assignmentId: String!
 	studentId: String!
 	submittedAt: String!
@@ -10,16 +10,16 @@ type MockSubmission {
 	status: String
 }
 
-input UpdateMockSubmissionInput{
-	id:Int!
-	grade:Int
-	feedback:String
+input UpdateMockSubmissionInput {
+	id: String!
+	grade: Int
+	feedback: String
 }
 
-type Query{
-	getMockSubmissions:[MockSubmission]
+type Query {
+	getMockSubmissions: [MockSubmission]
 }
 
-type Mutation{
-	updateMockSubmission(input:UpdateMockSubmissionInput):MockSubmission
+type Mutation {
+	updateMockSubmission(input: UpdateMockSubmissionInput): MockSubmission
 }

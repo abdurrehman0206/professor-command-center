@@ -5,7 +5,7 @@ export const getMockStudents = (): Student[] => {
 	return mockStudents;
 };
 
-export const getMockStudentById = (id: number): Student | null => {
+export const getMockStudentById = (id: string): Student | null => {
 	const mockStudent = mockStudents.find(
 		(student) => student.id === id.toString(),
 	);

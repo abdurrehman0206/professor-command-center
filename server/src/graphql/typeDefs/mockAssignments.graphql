@@ -1,5 +1,5 @@
 type MockAssignment {
-	id: Int!
+	id: String!
 	title: String!
 	description: String!
 	dueDate: String!
@@ -9,13 +9,13 @@ type MockAssignment {
 	lateSubmissions: Int
 }
 
-enum Status{
+enum Status {
 	draft
 	open
 	closed
 }
 
-input CreateMockAssignmentInput{
+input CreateMockAssignmentInput {
 	title: String!
 	description: String!
 	dueDate: String!
@@ -23,11 +23,11 @@ input CreateMockAssignmentInput{
 	status: Status!
 }
 
-type Query{
-	getMockAssignments:[MockAssignment]
-	getMockAssignmentById(id:Int!):MockAssignment
+type Query {
+	getMockAssignments: [MockAssignment]
+	getMockAssignmentById(id: String!): MockAssignment
 }
 
-type Mutation{
-	createMockAssignment(input : CreateMockAssignmentInput):MockAssignment
+type Mutation {
+	createMockAssignment(input: CreateMockAssignmentInput): MockAssignment
 }

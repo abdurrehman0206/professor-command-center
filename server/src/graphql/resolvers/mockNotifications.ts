@@ -10,7 +10,7 @@ export const mockNotificationsResolvers = {
 		},
 	},
 	Mutation: {
-		markMockNotificationAsRead: (_: unknown, { id }: { id: number }) => {
+		markMockNotificationAsRead: (_: unknown, { id }: { id: string }) => {
 			return markMockNotificationAsRead(id);
 		},
 	},

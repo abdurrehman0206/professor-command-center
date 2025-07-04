@@ -8,7 +8,7 @@ export const mockStudentsResolvers = {
 		getMockStudents: (_: unknown) => {
 			return getMockStudents();
 		},
-		getMockStudentById: (_: unknown, { id }: { id: number }) => {
+		getMockStudentById: (_: unknown, { id }: { id: string }) => {
 			return getMockStudentById(id);
 		},
 	},

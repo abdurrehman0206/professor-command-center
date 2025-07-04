@@ -10,7 +10,7 @@ export const updateMockSubmission = (
 ): Submission | null => {
 	const { id, grade, feedback } = input;
 	const mockSubmissionIndex = mockSubmissions.findIndex(
-		(submission) => submission.id === id.toString(),
+		(submission) => submission.id === id,
 	);
 	if (mockSubmissionIndex !== -1) {
 		mockSubmissions[mockSubmissionIndex] = {

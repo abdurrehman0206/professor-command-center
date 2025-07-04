@@ -1,5 +1,5 @@
 type MockCourse {
-	id: Int!
+	id: String!
 	code: String!
 	name: String!
 	semester: String!
@@ -7,6 +7,6 @@ type MockCourse {
 }
 
 type Query {
-	getMockCourses:[MockCourse]
-	getMockCourseById(id:Int!):MockCourse
+	getMockCourses: [MockCourse]
+	getMockCourseById(id: String!): MockCourse
 }

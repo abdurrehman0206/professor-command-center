@@ -70,7 +70,7 @@ export interface AnalyticsData {
 }
 
 export interface SubmissionInput {
-	id: number;
+	id: string;
 	grade: number;
 	feedback: string;
 }

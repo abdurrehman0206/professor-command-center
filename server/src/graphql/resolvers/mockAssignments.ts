@@ -10,7 +10,7 @@ export const mockAssignmentsResolvers = {
 		getMockAssignments: (_: unknown) => {
 			return getMockAssignments();
 		},
-		getMockAssignmentById: (_: unknown, { id }: { id: number }) => {
+		getMockAssignmentById: (_: unknown, { id }: { id: string }) => {
 			return getMockAssignmentById(id);
 		},
 	},

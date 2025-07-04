@@ -1,10 +1,10 @@
 type MockUser {
-	id: Int!
+	id: String!
 	name: String!
 	email: String!
 	role: String!
 }
 
 type Query {
-	getMockUserById(id: Int): MockUser
+	getMockUserById(id: String): MockUser
 }
