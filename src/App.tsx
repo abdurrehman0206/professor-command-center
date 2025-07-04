@@ -14,41 +14,47 @@ import AssignmentDetail from "@/pages/AssignmentDetail";
 import Students from "@/pages/Students";
 import Analytics from "@/pages/Analytics";
 import NotFound from "./pages/NotFound";
-
+import { ApolloProvider } from "@apollo/client";
+import client from "@/apollo/client";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="light"
-      enableSystem
-      disableTransitionOnChange
-    >
-      <TooltipProvider>
-        <AuthProvider>
-          <AppProvider>
-            <Toaster />
-            <Sonner />
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Navigate to="/login" replace />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/" element={<DashboardLayout />}>
-                  <Route path="dashboard" element={<Dashboard />} />
-                  <Route path="assignments" element={<Assignments />} />
-                  <Route path="assignments/:assignmentId" element={<AssignmentDetail />} />
-                  <Route path="students" element={<Students />} />
-                  <Route path="analytics" element={<Analytics />} />
-                </Route>
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </BrowserRouter>
-          </AppProvider>
-        </AuthProvider>
-      </TooltipProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
+	<ApolloProvider client={client}>
+		<QueryClientProvider client={queryClient}>
+			<ThemeProvider
+				attribute="class"
+				defaultTheme="light"
+				enableSystem
+				disableTransitionOnChange
+			>
+				<TooltipProvider>
+					<AuthProvider>
+						<AppProvider>
+							<Toaster />
+							<Sonner />
+							<BrowserRouter>
+								<Routes>
+									<Route path="/" element={<Navigate to="/login" replace />} />
+									<Route path="/login" element={<LoginPage />} />
+									<Route path="/" element={<DashboardLayout />}>
+										<Route path="dashboard" element={<Dashboard />} />
+										<Route path="assignments" element={<Assignments />} />
+										<Route
+											path="assignments/:assignmentId"
+											element={<AssignmentDetail />}
+										/>
+										<Route path="students" element={<Students />} />
+										<Route path="analytics" element={<Analytics />} />
+									</Route>
+									<Route path="*" element={<NotFound />} />
+								</Routes>
+							</BrowserRouter>
+						</AppProvider>
+					</AuthProvider>
+				</TooltipProvider>
+			</ThemeProvider>
+		</QueryClientProvider>
+	</ApolloProvider>
 );
 
 export default App;
