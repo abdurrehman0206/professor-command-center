@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 export const UPDATE_MOCK_SUBMISSIONS = gql`
-	mutation Mutation($input: UpdateMockSubmissionInput) {
+	mutation UpdateMockSubmission($input: UpdateMockSubmissionInput) {
 		updateMockSubmission(input: $input) {
 			id
 			assignmentId
